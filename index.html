@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/burger.js"></script>
+	<title>Aaron Moorhouse - Online CV</title>
+</head>
+<body>
+	<button class="c-hamburger c-hamburger--htx">
+		<span>toggle menu</span>
+	</button>
+	<div id="freeze">
+		<div id="mobile-links">
+			<p class="mobile-link"><a href="#profile" onclick="hideMenu()">Profile</a></p>
+			<p class="mobile-link"><a href="#education">Education</a></p>
+			<p class="mobile-link"><a href="#employment">Employment</a></p>
+			<p class="mobile-link"><a href="#skills">Skills</a></p>
+			<p class="mobile-link"><a href="#contact">Contact</a></p>
+		</div>
+	</div>	
+	<div id="overlay">
+		<div id="overlay-text">
+			<h1>Aaron Moorhouse</h1>
+			<p>Software Developer</p>
+		</div>
+	</div>
+	<div id="content">
+		<section id="profile">
+			<div id="profile-top">
+				<h2 name="profile">Profile</h2>
+				<p class="sub">I am an all-round developer, specialising in object-oriented programming</p>
+			</div>
+			<div id="profile-bottom">
+				<div class="profile-bottom" style="float: right;">
+					<h3>Details</h3>
+					<ul>
+						<li><strong>Name:</strong> Aaron Moorhouse</li>
+						<li><strong>Age:</strong> 20 Years</li>
+						<li><strong>Location:</strong> Huddersfield, UK</li>
+						<li><strong>Qualification:</strong> MEng Computing Science</li>
+					</ul>
+				</div>
+				<div class="profile-bottom">
+					<img src="img/me.jpg"></img>
+				</div>
+			</div>
+			<div id="profile-about">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ex in purus sagittis aliquet. Quisque et purus sit amet ipsum consequat ultrices eget at risus. Nullam tellus enim, 
+				malesuada in enim ut, ornare pellentesque ante. Vestibulum fringilla enim erat, ut facilisis odio tempus id. Nulla sit amet vehicula justo.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ex in purus sagittis aliquet. Quisque et purus sit amet ipsum consequat ultrices eget at risus. Nullam tellus enim, 
+				malesuada in enim ut, ornare pellentesque ante. Vestibulum fringilla enim erat, ut facilisis odio tempus id. Nulla sit amet vehicula justo.</p>
+			</div>
+		</section>
+		<section id="education">
+			<h2 name="#education">Education</h2>
+			<p class="sub">"Education is the most powerful weapon which you can use to change the world."<br><strong>Nelson Mandela</strong></p>
+			<h3>University of Huddersfield <br><span style="font-size: 0.75em;">(2013 - present)</span></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ex in purus sagittis aliquet. Quisque et purus sit amet ipsum consequat ultrices eget at risus. Nullam tellus enim, 
+			malesuada in enim ut, ornare pellentesque ante. Vestibulum fringilla enim erat, ut facilisis odio tempus id. Nulla sit amet vehicula justo.</p>
+			<!--<div id="grades">
+				<div class="grades" style="float: right;">
+					<h4>Year 2</h4>
+					<table class="grades-table">
+						<tr><th>Module</th><th>Grade</th></tr>
+						<tr><td>Computational Mathematics</td><td>A</td></tr>
+						<tr><td>Operating Systems &amp; Language Translators</td><td>A</td></tr>
+						<tr><td>Algorithms, Processes &amp; Data</td><td>B</td></tr>
+						<tr><td>Object-Oriented Systems Development</td><td>B</td></tr>
+						<tr><td>Relational Databases &amp; Web Integration</td><td>B</td></tr>
+						<tr><td>Team Project</td><td>B</td></tr>
+					</table>
+				</div>
+				<div class="grades">
+					<h4>Year 1</h4>
+					<table class="grades-table">
+						<tr><th>Module</th><th>Grade</th></tr>
+						<tr><td>Computing Science &amp; Mathematics</td><td>A</td></tr>
+						<tr><td>Project 1</td><td>A</td></tr>
+						<tr><td>Software Design &amp; Development</td><td>A</td></tr>
+						<tr><td>Studio 1</td><td>A</td></tr>
+						<tr><td>Hardware &amp; Networks</td><td>B</td></tr>
+					</table>
+				</div>
+			</div>-->
+			<br><br>
+			<h3>Huddersfield New College <br><span style="font-size: 0.75em;">(2011 - 2013)</span></h3>
+			<p style="margin-bottom: 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ex in purus sagittis aliquet. Quisque et purus sit amet ipsum consequat ultrices eget at 
+			risus. Nullam tellus enim, 
+			malesuada in enim ut, ornare pellentesque ante. Vestibulum fringilla enim erat, ut facilisis odio tempus id. Nulla sit amet vehicula justo.</p>
+			<h3>Salendine Nook High School <br><span style="font-size: 0.75em;">(2006 - 2011)</span></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ex in purus sagittis aliquet. Quisque et purus sit amet ipsum consequat ultrices eget at risus. Nullam tellus enim, 
+			malesuada in enim ut, ornare pellentesque ante. Vestibulum fringilla enim erat, ut facilisis odio tempus id. Nulla sit amet vehicula justo.</p>
+		</section>
+	</div>
+	<script>
+	(function() {
+	  "use strict";
+	  var toggles = document.querySelectorAll(".c-hamburger");
+	  var visible = false;
+
+	  var toggle = toggles[0];
+	  toggleHandler(toggle);
+
+	  function toggleHandler(toggle) {
+		  toggle.addEventListener( "click", function(e) {
+			  e.preventDefault();
+			  (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+			  //window.alert("click");
+			  
+			  if(!visible) {
+				visible = true;
+				showMenu();
+			  }
+			  else {
+				visible = false;
+				hideMenu();
+			  }
+			});
+		}
+	  
+		function showMenu() {
+			var freeze = document.getElementById("freeze");
+			freeze.style.visibility = "visible";
+	    }
+		
+		function hideMenu() {
+			var freeze = document.getElementById("freeze");
+			freeze.style.visibility = "hidden";
+		}
+	})();
+	</script>
+	<script>
+	</script>
+</body>
+</html>

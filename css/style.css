@@ -51,121 +51,121 @@ p, li {
 		z-index: 5;
 	}
 
-	.c-hamburger:focus {
-		outline: none;
-	}
-	
-	.c-hamburger span {
-		display: block;
-		position: absolute;
-		top: 44px;
-		left: 18px;
-		right: 18px;
-		height: 8px;
-		background: white;
-	}
-	
-	.c-hamburger span::before, .c-hamburger span::after {
-		position: absolute;
-		display: block;
-		left: 0;
-		width: 100%;
-		height: 8px;
-		background-color: #fff;
-		content: "";
-	}
-	
-	.c-hamburger span::before {
-		top: -20px;
-	}
+.c-hamburger:focus {
+	outline: none;
+}
 
-	.c-hamburger span::after {
-		bottom: -20px;
-	}
-	
-	.c-hamburger--htx {
-	  background-color: black;
-	}
+.c-hamburger span {
+	display: block;
+	position: absolute;
+	top: 44px;
+	left: 18px;
+	right: 18px;
+	height: 8px;
+	background: white;
+}
 
-	.c-hamburger--htx span {
-	  transition: background 0s 0.3s;
-	}
+.c-hamburger span::before, .c-hamburger span::after {
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 8px;
+	background-color: #fff;
+	content: "";
+}
 
-	.c-hamburger--htx span::before,
-	.c-hamburger--htx span::after {
-	  transition-duration: 0.3s, 0.3s;
-	  transition-delay: 0.3s, 0s;
-	}
+.c-hamburger span::before {
+	top: -20px;
+}
 
-	.c-hamburger--htx span::before {
-	  transition-property: top, transform;
-	}
+.c-hamburger span::after {
+	bottom: -20px;
+}
 
-	.c-hamburger--htx span::after {
-	  transition-property: bottom, transform;
-	}
+.c-hamburger--htx {
+  background-color: black;
+}
 
-	/* active state, i.e. menu open */
-	.c-hamburger--htx.is-active {
-	  background-color: #cb0032;
-	}
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
 
-	.c-hamburger--htx.is-active span {
-	  background: none;
-	}
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
 
-	.c-hamburger--htx.is-active span::before {
-	  top: 0;
-	  transform: rotate(45deg);
-	}
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
 
-	.c-hamburger--htx.is-active span::after {
-	  bottom: 0;
-	  transform: rotate(-45deg);
-	}
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
 
-	.c-hamburger--htx.is-active span::before,
-	.c-hamburger--htx.is-active span::after {
-	  transition-delay: 0s, 0.3s;
-	}
-	
-	#freeze {
-		z-index: 3;
-		visibility: hidden;
-		opacity: 0.9;
-		top: 0;
-		left: 0;
-		background-color: black;
-		position: fixed;
-		min-width: 100%;
-		min-height: 100%;
-	}
-	
-	#mobile-links {
-		z-index: 3;
-		position: fixed;
-		width: 50%;
-		top: 50%;
-		left: 25%;
-		transform: translateY(-50%);
-	}
-	
-	.mobile-link {
-		margin: 0;
-		margin-bottom: 50px;
-		font-size: 3em;
-		text-align: center;
-		color: white
-	}
-	
-	.mobile-link a {
-		color: white;
-		text-decoration: none;
-	}
-	
-	.mobile-link a:hover {
-		color: #72349A;
-	}
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+  background-color: #cb0032;
+}
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+
+#freeze {
+	z-index: 3;
+	visibility: hidden;
+	opacity: 0.9;
+	top: 0;
+	left: 0;
+	background-color: black;
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+#mobile-links {
+	z-index: 3;
+	position: fixed;
+	width: 50%;
+	top: 50%;
+	left: 25%;
+	transform: translateY(-50%);
+}
+
+.mobile-link {
+	margin: 0;
+	margin-bottom: 50px;
+	font-size: 3em;
+	text-align: center;
+	color: white
+}
+
+.mobile-link a {
+	color: white;
+	text-decoration: none;
+}
+
+.mobile-link a:hover {
+	color: #72349A;
+}
 
 /* -----Menu End----- */
 
@@ -315,6 +315,18 @@ p, li {
 }
 
 @media screen and (max-width : 1220px) {
+	#overlay-text {
+		
+	}
+	
+	#overlay-text h1 {
+		font-size: 6.5em;
+	}
+	
+	#overlay-text p {
+		font-size: 3.5em;
+	}
+	
 	#profile {
 		width: 80%;
 	}

@@ -215,7 +215,7 @@ p, li {
 	height: auto;
 }
 
-#profile {
+#profile, #skills {
 	width: 40%;
 	margin-left: auto;
 	margin-right: auto;
@@ -250,6 +250,7 @@ p, li {
 	padding-left: 10%;
 	padding-right: 10%;
 	padding-top: 40px;
+	padding-bottom: 20px;
 	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
@@ -258,6 +259,10 @@ p, li {
 }
 
 #grades {
+	width: 100%;
+}
+
+#skills img {
 	width: 100%;
 }
 
@@ -327,7 +332,7 @@ p, li {
 		font-size: 3.5em;
 	}
 	
-	#profile {
+	#profile, #skills {
 		width: 80%;
 	}
 }

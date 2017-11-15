@@ -361,10 +361,14 @@ a {
 	border-radius: 20px;
 }
 
+.profile-bottom ul {
+	padding: 0;
+}
+
 .profile-bottom ul li {
 	list-style: none;
-	font-size: 22px;
-	margin-bottom: 25px;
+	font-size: 1.2em;
+	margin-bottom: 20px;
 }
 
 .grades {
@@ -466,12 +470,24 @@ a {
 
 @media screen and (max-width : 920px) {
 
+	#profile-bottom {
+		height: auto;
+		margin-top: 0;
+	}
+
 	.profile-bottom {
-		width: 60%;
+		width: 100%;
+		height: auto;
+		text-align: center;
 	}
 	
 	.profile-bottom img {
-		width: 50%;
+		width: 30%;
+		transform: none;
+	}
+	
+	.profile-bottom ul li {
+		font-size: 1.1em;
 	}
 
 	.ed-col {
@@ -481,7 +497,7 @@ a {
 	
 	#overlay-text h1 {
 		width: 90%;
-		font-size: 4.5em;
+		font-size: 4em;
 	}
 	
 	#overlay-text p {
@@ -490,5 +506,40 @@ a {
 	
 	#contact-left, #contact-right {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width : 750px) {
+
+	.narrow, .wide {
+		width: 90%;
+	}
+	
+	.wide {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	
+	.c-hamburger {
+		width: 36px;
+		height: 36px;
+	}
+	
+	.c-hamburger span {
+		top: 16.5px;
+		left: 6.75px;
+		right: 6.75px;
+	}
+	
+	.c-hamburger span, .c-hamburger span::before, .c-hamburger span::after {
+		height: 3px;
+	}
+	
+	.c-hamburger span::before {
+		top: -7.5px;
+	}
+	
+	.c-hamburger span::after {
+		bottom: -7.5px;
 	}
 }

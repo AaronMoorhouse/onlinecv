@@ -3,9 +3,12 @@
 <head>
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<title>Aaron Moorhouse - Online CV</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="theme-color" content="#72349A">
+	<meta name="ms-application-navbutton-color" content="#72349A">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#72349A">
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+	<title>Aaron Moorhouse</title>
 </head>
 <body>
 	<button class="c-hamburger c-hamburger--htx">
@@ -14,32 +17,34 @@
 	<div id="freeze">
 		<div id="mobile-links">
 			<p class="mobile-link"><a href="#profile" onclick="hideMenu()">Profile</a></p>
-			<p class="mobile-link"><a href="#education">Education</a></p>
-			<p class="mobile-link"><a href="#skills">Skills</a></p>
-			<p class="mobile-link"><a href="#employment">Employment</a></p>
-			<p class="mobile-link"><a href="#contact">Contact</a></p>
+			<p class="mobile-link"><a href="#education" onclick="hideMenu()">Education</a></p>
+			<p class="mobile-link"><a href="#skills" onclick="hideMenu()">Skills</a></p>
+			<p class="mobile-link"><a href="#employment" onclick="hideMenu()">Employment</a></p>
+			<p class="mobile-link"><a href="#fyp" onclick="hideMenu()">Final Year Project</a></p>
+			<p class="mobile-link"><a href="#contact" onclick="hideMenu()">Contact</a></p>
 		</div>
 	</div>	
 	<div id="overlay">
 		<div id="overlay-text">
-			<h1>Aaron Moorhouse</h1>
+			<h1>Aaron Moorhouse <!--<span style="font-size: 0.4em">BSc (hons)</span>--></h1>
 			<p>Software Developer</p>
+			<p>Computing Science Graduate</p>
 		</div>
 	</div>
 	<div id="content">
-		<section id="profile">
+		<section id="profile" class="narrow">
 			<div id="profile-top">
 				<h2 name="profile">Profile</h2>
 				<p class="sub">I am an all-round developer, specialising in object-oriented programming</p>
 			</div>
 			<div id="profile-bottom">
-				<div class="profile-bottom" style="float: right;">
+				<div class="profile-bottom" style="float: right">
 					<h3>Details</h3>
 					<ul>
 						<li><strong>Name:</strong> Aaron Moorhouse</li>
-						<li><strong>Age:</strong> 20 Years</li>
+						<li><strong>Age:</strong> 22 Years</li>
 						<li><strong>Location:</strong> Huddersfield, UK</li>
-						<li><strong>Qualification:</strong> MEng Computing Science</li>
+						<li><strong>Qualification:</strong> BSc (hons) Computing Science</li>
 					</ul>
 				</div>
 				<div class="profile-bottom">
@@ -47,96 +52,200 @@
 				</div>
 			</div>
 			<div id="profile-about">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ex in purus sagittis aliquet. Quisque et purus sit amet ipsum consequat ultrices eget at risus. Nullam tellus enim, 
-				malesuada in enim ut, ornare pellentesque ante. Vestibulum fringilla enim erat, ut facilisis odio tempus id. Nulla sit amet vehicula justo.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ex in purus sagittis aliquet. Quisque et purus sit amet ipsum consequat ultrices eget at risus. Nullam tellus enim, 
-				malesuada in enim ut, ornare pellentesque ante. Vestibulum fringilla enim erat, ut facilisis odio tempus id. Nulla sit amet vehicula justo.</p>
+				<p>I'm a computing science graduate from the University of Huddersfield and I even spent a year working there as a web developer/technical assistant. I have a good knowledge of object-oriented programming -
+				Java and PHP being my most proficient languages.</p>
+				<p>I enjoy developing software from desktop programs to web applications. Maintaining quality and efficiency are usually my main priorities during development. I tend to work very well as an individual,
+				however, I can also perform as part of a team. The best thing about team-based projects is being able to learn key skills from others. Infact, almost all of my knowledge of front-end web design I picked 
+				up during my placement year.</p>
 			</div>
 		</section>
-		<section id="education">
+		<section id="education" class="wide">
 			<h2 name="#education">Education</h2>
 			<p class="sub">"Education is the most powerful weapon which you can use to change the world."<br><strong>Nelson Mandela</strong></p>
-			<h3>University of Huddersfield <br><span style="font-size: 0.75em;">(2013 - present)</span></h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ex in purus sagittis aliquet. Quisque et purus sit amet ipsum consequat ultrices eget at risus. Nullam tellus enim, 
-			malesuada in enim ut, ornare pellentesque ante. Vestibulum fringilla enim erat, ut facilisis odio tempus id. Nulla sit amet vehicula justo.</p>
-			<!--<div id="grades">
-				<div class="grades" style="float: right;">
-					<h4>Year 2</h4>
-					<table class="grades-table">
-						<tr><th>Module</th><th>Grade</th></tr>
-						<tr><td>Computational Mathematics</td><td>A</td></tr>
-						<tr><td>Operating Systems &amp; Language Translators</td><td>A</td></tr>
-						<tr><td>Algorithms, Processes &amp; Data</td><td>B</td></tr>
-						<tr><td>Object-Oriented Systems Development</td><td>B</td></tr>
-						<tr><td>Relational Databases &amp; Web Integration</td><td>B</td></tr>
-						<tr><td>Team Project</td><td>B</td></tr>
-					</table>
-				</div>
-				<div class="grades">
+			<h3>University of Huddersfield <br><span style="font-size: 0.75em;">(Sept 2013 - Jun 2017)</span></h3>
+			<p>In 2017, I graduated from the University of Huddersfield with a first class bachelor's degree in Computing Science. During this time, I studied a wide range of modules, some of which
+			involved interesting coursework projects. Details of the modules taken and the key projects worked on are specified below.</p>
+			<div class="ed-row">
+				<div class="ed-col">
 					<h4>Year 1</h4>
-					<table class="grades-table">
-						<tr><th>Module</th><th>Grade</th></tr>
-						<tr><td>Computing Science &amp; Mathematics</td><td>A</td></tr>
-						<tr><td>Project 1</td><td>A</td></tr>
-						<tr><td>Software Design &amp; Development</td><td>A</td></tr>
-						<tr><td>Studio 1</td><td>A</td></tr>
-						<tr><td>Hardware &amp; Networks</td><td>B</td></tr>
-					</table>
 				</div>
-			</div>-->
-			<br><br>
-			<h3>Huddersfield New College <br><span style="font-size: 0.75em;">(2011 - 2013)</span></h3>
-			<p style="margin-bottom: 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ex in purus sagittis aliquet. Quisque et purus sit amet ipsum consequat ultrices eget at 
-			risus. Nullam tellus enim, 
-			malesuada in enim ut, ornare pellentesque ante. Vestibulum fringilla enim erat, ut facilisis odio tempus id. Nulla sit amet vehicula justo.</p>
-			<h3>Salendine Nook High School <br><span style="font-size: 0.75em;">(2006 - 2011)</span></h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ex in purus sagittis aliquet. Quisque et purus sit amet ipsum consequat ultrices eget at risus. Nullam tellus enim, 
-			malesuada in enim ut, ornare pellentesque ante. Vestibulum fringilla enim erat, ut facilisis odio tempus id. Nulla sit amet vehicula justo.</p>
+				<div class="ed-col">
+					<p><u>Modules:</u></p>
+					<ul>
+						<li>Computing Science and Mathematics</li>
+						<li>Hardware and Networks</li>
+						<li>Project 1</li>
+						<li>Software Design and Development</li>
+						<li>Studio 1</li>
+					</ul>
+				</div>
+				<div class="ed-col">
+					<p><u>Key Projects:</u></p>
+					<ul class="key-projects">
+						<li>Developing a multiplayer quiz game in Java involving multiple choice questions.</li>
+						<li>Group project involving the documentation and development of an Android app which allows users to convert numbers to various different bases (e.g. decimal to binary, binary to octal etc.).</li>
+						<li>Individually produced Android application for a chosen event (2014 World Cup), including information relevant to the event, demonstrating basic XML GUI design for simple Activities and Fragments.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="ed-row">
+				<div class="ed-col">
+					<h4>Year 2</h4>
+				</div>
+				<div class="ed-col">
+					<p><u>Modules:</u></p>
+					<ul>
+						<li>Algorithms, Processes and Data</li>
+						<li>Computational Mathematics 1</li>
+						<li>Object-Oriented Systems Development</li>
+						<li>Operating Systems and Language Translators</li>
+						<li>Relational Databases and Web Integration</li>
+						<li>Team Project</li>
+					</ul>
+				</div>
+				<div class="ed-col">
+					<p><u>Key Projects:</u></p>
+					<ul class="key-projects">
+						<li>Designing and developing a client-server system in C++ to simulate aeroplane black boxes sending data to a server in real time.</li>
+						<li>Designing and building a relational database using MySQL and creating a simple PHP application to view and manage the database contents.</li>
+						<li>Team project involving the development of a database-driven web application, allowing users to view and share cooking recipes.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="ed-row">
+				<div class="ed-col">
+					<h4>Year 3</h4>
+				</div>
+				<div class="ed-col">
+					<p>As the third year was spent doing a work placement, no significant modules were taken that year.</p>
+					<p>See <a href="#employment">Employment</a>.</p>
+				</div>
+			</div>
+			<div class="ed-row" style="margin-bottom: 20px; border: none">
+				<div class="ed-col">
+					<h4>Year 4</h4>
+				</div>
+				<div class="ed-col">
+					<p><u>Modules:</u></p>
+					<ul>
+						<li>Artificial Intelligence</li>
+						<li>Computational Mathematics 2</li>
+						<li>Distributed and Client Server Systems</li>
+						<li>Individual Project</li>
+						<li>Modern Database Applications</li>
+					</ul>
+				</div>
+				<div class="ed-col">
+					<p><u>Key Projects:</u></p>
+					<ul class="key-projects">
+						<li>Implementing MATLAB functions to solve square systems of simultaneous equations using LU factorisation.</li>
+						<li>Developing a real-time messaging application in Java using a tuple space to temporarily store unread messages.</li>
+						<li>Developing software programs for components of a hypothetical security system using CORBA to allow client devices to communicate with each other and the server.</li>
+						<li>Final year project/dissertation involved developing a PHP web application for aiding team management and communication built using a simple custom PHP framework, incorporating MVC principles - 
+						see <a href="#fyp">Final Year Project</a>.</li>
+					</ul>
+				</div>
+			</div>
+			<h3>Huddersfield New College <br><span style="font-size: 0.75em;">(Sept 2011 - Jun 2013)</span></h3>
+			<p class="section-end">In college, I studied A-Levels in Biology and Use of Mathematics, whilst also achieving a Level 3 BTEC Subsidiary Diploma in IT. I also achieved an AS-Level qualification
+			in chemistry after deciding not to continue with the subject at the end of the first year.</p>
+			<h3>Salendine Nook High School <br><span style="font-size: 0.75em;">(Sept 2006 - Jul 2011)</span></h3>
+			<p>I left high school in 2011, achieving 10 GCSEs at grade A-C, including Maths, English, Biology, Chemistry and Physics.</p>
 		</section>
-		<section id="skills">
+		<section id="skills" class="narrow">
 			<h2>Skills</h2>
-			<p class="sub">"Some quote here."<br><strong>Some Guy</strong></p>
+			<p class="sub">"Every artist was first an amateur."<br><strong>Ralph Waldo Emerson</strong></p>
 			<img src="img/skills.png"></img>
+			<p>Other skills include:</p>
+			<ul>
+				<li>Experience with Windows and Ubuntu operating systems.</li>
+				<li>Experience using Microsoft Office (including Word, Excel, Access etc.) and Visio.</li>
+				<li>Designing basic PNG images in Adobe Fireworks (buttons, icons etc.).</li>
+			</ul>
+		</section>
+		<section id="employment" class="wide">
+			<h2>Employment</h2>
+			<p class="sub">"Choose a job you love, and you will never have to work a day in your life."<br><strong>Confucius</strong></p>
+			<h3>University of Huddersfield | Technical Assistant<br><span style="font-size: 0.75em;">(Sept 2015 - Aug 2016)</span></h3>
+			<p>My placement year was spent working in the Learning Technology Support Unit in the School of Human and Health Sciences. My primary role involved working in a development team of two people, 
+			programming the back-end for PHP web applications. This also included creating the databases used by these applications and writing the queries to retrieve and modify the data.</p>
+			<p>The main project I worked on was the Peer Review of Research Applications Management System (PRRAMS). PRRAMS is a web application developed by myself and on other colleague, which allows research 
+			staff in the School of Human and Health Sciences at the University of Huddersfield to apply for funding for research projects. Users can upload proposals which can be approved or referred to management 
+			by a reviewer. Reviewers also must provide feedback afterwards. My role in the development of the site was to program the back-end in PHP and to build the MySQL database and write queries for 
+			retrieving/updating the data.</p>
+			<p>Other projects worked on include a podiatry clinic simulation game created in the Unity engine and an anagram quiz game in Flash.</p>
+			<p>Aside from web development, my secondary role was to respond to support queries from staff and students having problems using the Unilearn VLE.</p>
+		</section>
+		<section id="fyp" class="narrow">
+			<h2>Final Year Project</h2>
+			<p class="sub">"I think it's good."<br><strong>Ben Haigh</strong></p>
+			<a href="https://selene.hud.ac.uk/u1354494/athena" target="_blank"><img src="img/athena.jpg"></img></a>
+			<p>My final year project involved developing a PHP application to facilitate task management and communication within teams. Users can create/join/manage teams, create/manage tasks and communicate via 
+			discussion threads.</p>
+			<p>An additional feature allows users to customise the website's colour scheme. The colour can be set to any RGB colour or one can be selected from a list of presets. This also affects the Gantt chart as
+			tasks assigned to a specific user </p>
+			<p>The back-end was developed in PHP using a simplistic MVC framework I had created previously and all HTML and CSS for the responsive front-end was written from scratch without frameworks.</p>
+			<a class="button" href="https://github.com/AaronMoorhouse/Athena">See project on GitHub</a>
 		</section>
 	</div>
+	<section id="contact" class="wide">
+		<h2>Contact</h2>
+		<p class="sub">"We are all unique, and have our own special place in the puzzle of the universe."<br><span><strong>Rod Williams</strong></p>
+		<div id="contact-right">
+			<p><span class="icon" style="background: url(img/icons/facebook.png)"></span><a href="https://www.facebook.com/aaron.moorhouse.75">facebook.com/aaron.moorhouse.75</a></p>
+			<p><span class="icon" style="background: url(img/icons/google.png)"></span><a href="https://plus.google.com/u/0/+AaronMoorhouse">plus.google.com/u/0/+AaronMoorhouse</a></p>
+		</div>
+		<div id="contact-left">
+			<p><span class="icon" style="background: url(img/icons/phone.png)"></span>07580 315674</p>
+			<p><span class="icon" style="background: url(img/icons/email.png)"></span><a href="mailto:AMoorhouse95@outlook.com">AMoorhouse95@outlook.com</a></p>
+		</div>
+		<div>
+			<p style="font-size: 0.7em; text-align: center">Icons made by <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> 
+			from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+			is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+		</div>
+	</section>
 	<script>
-	(function() {
-	  "use strict";
-	  var toggles = document.querySelectorAll(".c-hamburger");
-	  var visible = false;
-
-	  var toggle = toggles[0];
-	  toggleHandler(toggle);
-
-	  function toggleHandler(toggle) {
-		  toggle.addEventListener( "click", function(e) {
-			  e.preventDefault();
-			  (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-			  //window.alert("click");
-			  
-			  if(!visible) {
-				visible = true;
-				showMenu();
-			  }
-			  else {
-				visible = false;
-				hideMenu();
-			  }
-			});
-		}
-	  
+		var toggle = document.getElementsByClassName("c-hamburger")[0];
+		var freeze = document.getElementById("freeze");
+	
 		function showMenu() {
-			var freeze = document.getElementById("freeze");
 			freeze.style.visibility = "visible";
-	    }
+		}
 		
 		function hideMenu() {
-			var freeze = document.getElementById("freeze");
 			freeze.style.visibility = "hidden";
+			toggle.classList.remove("is-active");
 		}
-	})();
-	</script>
-	<script>
+	
+		(function() {
+			"use strict";
+			var visible = false;
+
+			toggleHandler(toggle);
+
+			function toggleHandler(toggle) {
+				toggle.addEventListener("click", function(e) {
+					e.preventDefault();
+					
+					if(this.classList.contains("is-active")) {
+						this.classList.remove("is-active");
+					}
+					else {
+						this.classList.add("is-active");
+					}
+				  
+					if(!visible) {
+						visible = true;
+						showMenu();
+					}
+					else {
+						visible = false;
+						hideMenu();
+					}
+				});
+			}
+		})();
 	</script>
 </body>
 </html>

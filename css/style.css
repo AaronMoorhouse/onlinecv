@@ -335,7 +335,8 @@ a {
 }
 
 #contact-left, #contact-right {
-	width: 49.9%;
+	width: 49.5%;
+	display: inline-block;
 	text-align: center;
 }
 
@@ -346,17 +347,8 @@ a {
 	line-height: 32px;
 }
 
-#contact-left {
-	/*background-color: red;*/
-}
-
-#contact-right {
-	float: right;
-	/*background-color: green;*/
-}
-
 .profile-bottom {
-	width: 49%;
+	width: 49.5%;
 	height: 100%;
 }
 
@@ -472,7 +464,20 @@ a {
 	}
 }
 
-@media screen and (max-width : 750px) {
+@media screen and (max-width : 920px) {
+
+	.profile-bottom {
+		width: 60%;
+	}
+	
+	.profile-bottom img {
+		width: 50%;
+	}
+
+	.ed-col {
+		width: 100%;
+		display: block;
+	}
 	
 	#overlay-text h1 {
 		width: 90%;
@@ -481,5 +486,9 @@ a {
 	
 	#overlay-text p {
 		font-size: 1.5em;
+	}
+	
+	#contact-left, #contact-right {
+		width: 100%;
 	}
 }

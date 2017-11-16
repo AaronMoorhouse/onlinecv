@@ -192,7 +192,7 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 	
-	background-color: rgba(114,52,154,0.1);
+	background-color: rgba(114,52,154,0.08);
 }
 
 .sub {
@@ -482,7 +482,7 @@ a {
 	}
 	
 	.profile-bottom img {
-		width: 30%;
+		width: 40%;
 		transform: none;
 	}
 	
@@ -510,6 +510,10 @@ a {
 }
 
 @media screen and (max-width : 750px) {
+
+	body {
+		background-image: url("../img/background_mobile.jpg");
+	}
 
 	.narrow, .wide {
 		width: 90%;

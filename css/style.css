@@ -519,6 +519,10 @@ a {
 		background-image: url("../img/background_mobile.jpg");
 		background-size: cover;
 	}
+	
+	.mobile-links a {
+		font-size: 2em;
+	}
 
 	.narrow, .wide {
 		width: 90%;

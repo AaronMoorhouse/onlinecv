@@ -520,8 +520,8 @@ a {
 		background-size: cover;
 	}
 	
-	.mobile-link a {
-		font-size: 2em;
+	.mobile-link {
+		font-size: 1.5em;
 	}
 
 	.narrow, .wide {

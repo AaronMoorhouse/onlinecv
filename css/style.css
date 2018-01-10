@@ -13,9 +13,12 @@ body {
 h2, h3, h4 {
 	margin: 0;
 	text-align: center;
-	font-size: 54px;
-	font-weight: 200;
+	font-weight: 300;
 	color: #72349A;
+}
+
+h2 {
+	font-size: 54px;
 }
 
 h3 {
@@ -183,11 +186,12 @@ a {
 }
 
 .wide {
-	width: 80%;
+	width: 100%;
 	padding-left: 10%;
 	padding-right: 10%;
 	padding-top: 40px;
 	padding-bottom: 20px;
+	margin: 0;
 	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
@@ -242,7 +246,9 @@ a {
 	transform: translateX(-50%);
 }
 
-.button:hover {
+.button:hover, .button:focus {
+	text-decoration: none;
+	color: white;
 	background-color: rgba(114,52,154,0.7);
 }
 
@@ -301,6 +307,12 @@ a {
 	width: 100%;
 	
 	/* background-color: pink; */
+}
+
+#details {
+	/*position: relative;
+	top: 50%;
+	transform: translateY(-50%);*/
 }
 
 #grades {
@@ -428,6 +440,36 @@ a {
 	margin-bottom: 16px;
 }
 
+.skill-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.skill-list li {
+	padding: 5px 0 5px 0;
+}
+
+.skill-list li:hover {
+	background-color: #E5E5E5;
+}
+
+.skill {
+	width: 65%;
+	display: inline-block;
+}
+
+.score {
+	float: right;
+}
+
+.glyphicon-star {
+	color: #CCCCCC;
+}
+
+.filled {
+	color: #72349A;
+}
+
 @media screen and (max-width : 1250px) {
 
 	.narrow {
@@ -529,6 +571,7 @@ a {
 	}
 	
 	.wide {
+		width: 100%;
 		padding-left: 5%;
 		padding-right: 5%;
 	}

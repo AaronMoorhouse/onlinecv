@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" />
@@ -18,7 +19,7 @@
 	<meta name="theme-color" content="#72349A">
 	<meta name="ms-application-navbutton-color" content="#72349A">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#72349A">
-	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<title>Aaron Moorhouse</title>
 </head>
 <body>
@@ -48,18 +49,20 @@
 				<h2 name="profile">Profile</h2>
 				<p class="sub">I am an all-round developer, specialising in object-oriented programming</p>
 			</div>
-			<div id="profile-bottom">
-				<div class="profile-bottom" style="float: right">
-					<h3>Details</h3>
-					<ul>
-						<li><strong>Name:</strong> Aaron Moorhouse</li>
-						<li><strong>Age:</strong> 22 Years</li>
-						<li><strong>Location:</strong> Huddersfield, UK</li>
-						<li><strong>Qualification:</strong> BSc (hons) Computing Science</li>
-					</ul>
-				</div>
-				<div class="profile-bottom">
+			<div id="profile-bottom" class="row">
+				<div class="profile-bottom col-md-6">
 					<img src="img/me.jpg"></img>
+				</div>
+				<div class="profile-bottom col-md-6">
+					<div id="details">
+						<h3>Details</h3>
+						<ul>
+							<li><strong>Name:</strong> Aaron Moorhouse</li>
+							<li><strong>Age:</strong> 22 Years</li>
+							<li><strong>Location:</strong> Huddersfield, UK</li>
+							<li><strong>Qualification:</strong> BSc (hons) Computing Science</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div id="profile-about">
@@ -74,7 +77,7 @@
 			<h2 name="#education">Education</h2>
 			<p class="sub">"Education is the most powerful weapon which you can use to change the world."<br><strong>Nelson Mandela</strong></p>
 			<h3>University of Huddersfield <br><span style="font-size: 0.75em;">(Sept 2013 - Jun 2017)</span></h3>
-			<p>In 2017, I graduated from the University of Huddersfield with a first class bachelor's degree in Computing Science. During this time, I studied a wide range of modules, some of which
+			<p>In 2017, I graduated from the University of Huddersfield with a first class bachelor's degree in Computing Science. During my time at university, I studied a wide range of modules, some of which
 			involved interesting coursework projects. Details of the modules taken and the key projects worked on are specified below.</p>
 			<div class="ed-row">
 				<div class="ed-col">
@@ -166,13 +169,294 @@
 		<section id="skills" class="narrow">
 			<h2>Skills</h2>
 			<p class="sub">"Every artist was first an amateur."<br><strong>Ralph Waldo Emerson</strong></p>
-			<img src="img/skills.png"></img>
-			<p>Other skills include:</p>
+			<h4>Technologies</h4>
+			<div class="row">
+				<div class="col-md-6">
+					<ul class="skill-list">
+						<li>
+							<span class="skill">Java</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">Object-Oriented Programming</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">PHP</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">CSS</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">HTML</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">MySQL</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="skill-list">
+						<li>
+							<span class="skill">UML</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">C# (Games programming)</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">JavaScript</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">Visual C++</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">XML</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">jQuery</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<h4>Tools/Programs</h4>
+			<div class="row">
+				<div class="col-md-6">
+					<ul class="skill-list">
+						<li>
+							<span class="skill">Eclipse IDE</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">FileZilla</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">Microsoft Office</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">Notepad++</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">Windows</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">Adobe Dreamweaver</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">Adobe Fireworks</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="skill-list">
+						<li>
+							<span class="skill">Microsoft Visual Studio</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">MySQL Workbench</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">Ubuntu</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">XAMPP</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">Git</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">MATLAB</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+						<li>
+							<span class="skill">Unity</span>
+							<span class="score">
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--<p>Other skills include:</p>
 			<ul>
 				<li>Experience with Windows and Ubuntu operating systems.</li>
 				<li>Experience using Microsoft Office (including Word, Excel, Access etc.) and Visio.</li>
 				<li>Designing basic PNG images in Adobe Fireworks (buttons, icons etc.).</li>
-			</ul>
+			</ul>-->
 		</section>
 		<section id="employment" class="wide">
 			<h2>Employment</h2>
@@ -186,6 +470,7 @@
 			retrieving/updating the data.</p>
 			<p>Other projects worked on include a podiatry clinic simulation game created in the Unity engine and an anagram quiz game in Flash.</p>
 			<p>Aside from web development, my secondary role was to respond to support queries from staff and students having problems using the Unilearn VLE.</p>
+			<p><a class="button" href="./docs/placement_appraisal.pdf" target="_blank">View placement appraisal</a></p>
 		</section>
 		<section id="fyp" class="narrow">
 			<h2>Final Year Project</h2>
@@ -196,7 +481,7 @@
 			<p>An additional feature allows users to customise the website's colour scheme. The colour can be set to any RGB colour or one can be selected from a list of presets. This also affects the Gantt chart as
 			tasks assigned to a specific user </p>
 			<p>The back-end was developed in PHP using a simplistic MVC framework I had created previously and all HTML and CSS for the responsive front-end was written from scratch without frameworks.</p>
-			<a class="button" href="https://github.com/AaronMoorhouse/Athena">See project on GitHub</a>
+			<p><a class="button" href="https://github.com/AaronMoorhouse/Athena" target="_blank">See project on GitHub</a></p>
 		</section>
 	</div>
 	<section id="contact" class="wide">

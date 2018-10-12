@@ -446,7 +446,8 @@ a {
 }
 
 .skill-list li {
-	padding: 5px 0 5px 0;
+	padding: 5px;
+	border-radius: 5px;
 }
 
 .skill-list li:hover {

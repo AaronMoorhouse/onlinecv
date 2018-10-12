@@ -58,7 +58,7 @@
 						<h3>Details</h3>
 						<ul>
 							<li><strong>Name:</strong> Aaron Moorhouse</li>
-							<li><strong>Age:</strong> 22 Years</li>
+							<li><strong>Age:</strong> <span id="age-text"></span></li>
 							<li><strong>Location:</strong> Huddersfield, UK</li>
 							<li><strong>Qualification:</strong> BSc (hons) Computing Science</li>
 						</ul>
@@ -511,6 +511,20 @@
 			is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
 		</div>
 	</section>
+
+	<script>
+		var ageText = document.getElementById("age-text");
+
+		var birthday = new Date("07/22/1995");
+		var now = new Date();
+		
+		var diff = (now.getTime() - birthday.getTime()) / 1000;
+		diff = diff / (60 * 60 * 24);
+		age = Math.abs(Math.round(diff / 365.25));
+
+		ageText.innerHTML = age + " Years";
+	</script>
+
 	<script>
 		var toggle = document.getElementsByClassName("c-hamburger")[0];
 		var freeze = document.getElementById("freeze");

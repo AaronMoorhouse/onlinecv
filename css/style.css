@@ -291,28 +291,16 @@ a {
 
 #profile-top {
 	width: 100%;
-	
-	/* background-color: yellow; */
 }
 
 #profile-bottom {
 	width: 100%;
 	margin-top: 50px;
 	height: 400px;
-	
-	/* background-color: green; */
 }
 
 #profile-about {
 	width: 100%;
-	
-	/* background-color: pink; */
-}
-
-#details {
-	/*position: relative;
-	top: 50%;
-	transform: translateY(-50%);*/
 }
 
 #grades {

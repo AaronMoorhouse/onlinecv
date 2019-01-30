@@ -574,14 +574,15 @@
 	</section>
 
 	<script>
-		var ageText = document.getElementById("age-text");
+		function calculateAge(birthday) {
+			var ageDiff = Date.now() - birthday.getTime();
+			var ageDate = new Date(ageDiff);
+			return Math.abs(ageDate.getUTCFullYear() - 1970);
+		}
 
+		var ageText = document.getElementById("age-text");
 		var birthday = new Date("07/22/1995");
-		var now = new Date();
-		
-		var diff = (now.getTime() - birthday.getTime()) / 1000;
-		diff = diff / (60 * 60 * 24);
-		age = Math.abs(Math.round(diff / 365.25));
+		var age = calculateAge(birthday);
 
 		ageText.innerHTML = age + " Years";
 	</script>

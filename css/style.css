@@ -218,7 +218,7 @@ a {
 	height: 32px;
 	margin-right: 25px;
 	float: left;
-	display: inline-block;
+	background-size: contain;
 }
 
 .button0 {

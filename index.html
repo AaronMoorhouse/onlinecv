@@ -601,62 +601,7 @@
 			is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
 		</div>
 	</section>
-
-	<script>
-		function calculateAge(birthday) {
-			var ageDiff = Date.now() - birthday.getTime();
-			var ageDate = new Date(ageDiff);
-			return Math.abs(ageDate.getUTCFullYear() - 1970);
-		}
-
-		var ageText = document.getElementById("age-text");
-		var birthday = new Date("07/22/1995");
-		var age = calculateAge(birthday);
-
-		ageText.innerHTML = age + " Years";
-	</script>
-
-	<script>
-		var toggle = document.getElementsByClassName("c-hamburger")[0];
-		var freeze = document.getElementById("freeze");
-	
-		function showMenu() {
-			freeze.style.visibility = "visible";
-		}
-		
-		function hideMenu() {
-			freeze.style.visibility = "hidden";
-			toggle.classList.remove("is-active");
-		}
-	
-		(function() {
-			"use strict";
-			var visible = false;
-
-			toggleHandler(toggle);
-
-			function toggleHandler(toggle) {
-				toggle.addEventListener("click", function(e) {
-					e.preventDefault();
-					
-					if(this.classList.contains("is-active")) {
-						this.classList.remove("is-active");
-					}
-					else {
-						this.classList.add("is-active");
-					}
-				  
-					if(!visible) {
-						visible = true;
-						showMenu();
-					}
-					else {
-						visible = false;
-						hideMenu();
-					}
-				});
-			}
-		})();
-	</script>
+	<script src="js/age.js"></script>
+	<script src="js/menu.js"></script>
 </body>
 </html>

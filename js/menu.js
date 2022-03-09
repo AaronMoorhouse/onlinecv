@@ -11,7 +11,6 @@ function hideMenu() {
 }
 
 (function() {
-    console.log("hi");
     "use strict";
     var visible = false;
 

@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Marcellus');
 
 body {
 	padding: 0;
 	margin: 0;
 	font-size: 16px;
-	font-family: 'Marcellus', 'Open Sans', sans-serif !important;
+	font-family: 'Open Sans', sans-serif !important;
 	background-image: url("../img/background.jpg");
 	background-size: cover;
 	background-attachment: fixed;

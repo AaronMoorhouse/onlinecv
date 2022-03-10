@@ -542,12 +542,7 @@ a {
 @media screen and (max-width : 750px) {
 
 	body {
-		background-image: none;
-	}
-	
-	#overlay, #contact {
-		background-image: url("../img/background_mobile_new.jpg");
-		background-size: cover;
+		background-image: url("../img/background_mobile.jpg");
 	}
 	
 	.mobile-link {

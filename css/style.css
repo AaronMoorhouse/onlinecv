@@ -15,7 +15,7 @@ h2, h3, h4 {
 	margin: 0;
 	text-align: center;
 	font-weight: 300;
-	color: #e84118;
+	color: #18a2d0;
 }
 
 h2 {
@@ -33,11 +33,11 @@ h4 {
 
 p, li {
 	font-weight: 200;
-	color: #b4b2b0;
+	color: #505050;
 }
 
 a {
-	color: #e84118;
+	color: #18a2d0;
 }
 
 /* -----Menu----- */
@@ -197,7 +197,7 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 	
-	background-color: #353b48;
+	background-color: rgba(24, 162, 208, 0.08);
 }
 
 .sub {
@@ -236,12 +236,12 @@ a {
 	margin-top: 10px;
 	padding: 6px 12px;
 	display: inline-block;
-	border: 1px solid rgba(232,65,24,1);
+	border: 1px solid rgb(24, 162, 208);
 	border-radius: 7px;
 	text-align: center;
 	text-decoration: none;
 	color: white;
-	background-color: rgba(232,65,24,0.8);
+	background-color: rgba(24, 162, 208, 1);
 	
 	margin-left: 50%;
 	transform: translateX(-50%);
@@ -250,7 +250,7 @@ a {
 .button:hover, .button:focus {
 	text-decoration: none;
 	color: white;
-	background-color: rgba(232,65,24,0.7);
+	background-color: rgba(24, 162, 208, 0.7);
 }
 
 #overlay-text, .profile-bottom img {
@@ -287,7 +287,7 @@ a {
 #content {
 	width: 100%;
 	height: auto;
-	background-color: #2f3640;
+	background-color: rgb(241,241,241);
 }
 
 #profile-top {
@@ -317,7 +317,7 @@ a {
 }
 
 #fyp img {
-	border: 3px solid #e84118;
+	border: 3px solid #18a2d0;
 	border-radius: 10px;
 }
 
@@ -357,7 +357,7 @@ a {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	border: 10px solid rgba(232,65,24,0.2);
+	border: 10px solid rgba(24, 162, 208, 0.2);
 	border-radius: 20px;
 }
 
@@ -439,7 +439,7 @@ a {
 }
 
 .skill-list li:hover {
-	background-color: #353b48;
+	background-color: rgba(24, 162, 208, 0.08);
 }
 
 .skill {
@@ -456,7 +456,7 @@ a {
 }
 
 .filled {
-	color: #e84118;
+	color: #18a2d0;
 }
 
 @media screen and (max-width : 1250px) {

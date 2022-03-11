@@ -252,6 +252,10 @@ a {
 	background-color: rgba(24, 162, 208, 0.7);
 }
 
+.project-title {
+	margin-bottom: 20px;
+}
+
 #overlay-text, .profile-bottom img {
 	position: relative;
 	top: 50%;
@@ -307,15 +311,15 @@ a {
 	width: 100%;
 }
 
-#skills img, #fyp img {
+#skills img, #projects img {
 	width: 100%;
 }
 
-#fyp {
+#projects {
 	padding-bottom: 30px;
 }
 
-#fyp img {
+#projects img {
 	border: 3px solid #18a2d0;
 	border-radius: 10px;
 }

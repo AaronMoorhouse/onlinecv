@@ -576,7 +576,13 @@
 				to make one of our main projects much easier to develop by reducing duplicated code, having a separation of concerns in terms of logic and having URL routing 
 				and templating systems, which would all contribute towards making the project much more easily maintainable for both us and any future placement students.
 			</p>
-			
+			<h4>Routing</h4>
+			<p>
+				When an incoming request occurs from a client browser, the requested URL is processed by the router to determine which controller should be instantiated 
+				and which action should be called. It will also check for any additional parameters, which would be passed as parameters when calling the controller function 
+				for the specified action. For example, if the requested URL was <i>'[root]/users/detail/1'</i>, it would instantiate <code>UsersController</code> and call the 
+				<code>detail()</code> action, passing the '1' as the parameter.
+			</p>
 			<p><a class="button" href="https://github.com/AaronMoorhouse/cinderphp" target="_blank">View on GitHub</a></p>
 			<h3 class="project-title">Athena | Final Year Project<br><span style="font-size: 0.6em;">PHP, MySQL, JavaScript, HTML, CSS</span></h3>
 			<a href="https://selene.hud.ac.uk/u1354494/athena" target="_blank"><img src="img/athena.jpg"></img></a>

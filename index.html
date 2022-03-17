@@ -583,6 +583,16 @@
 				for the specified action. For example, if the requested URL was <i>'[root]/users/detail/1'</i>, it would instantiate <code>UsersController</code> and call the 
 				<code>detail()</code> action, passing the '1' as the parameter.
 			</p>
+			<h4>Controllers</h4>
+			<p>
+				The controllers work by having a separate function for each available action/page related to it. Within these functions, you can specify functionality 
+				such as requesting data from the model, retrieving form data via POST request and passing data to the template to be displayed by the view.
+			</p>
+			<p>
+				It will also automatically create and store an instance of a model object, which is named using the same prefix as the controller (if such a class exists 
+				within the 'models' folder). This means that the model can always be accessed by using <code>$this->model</code> without having to manually include 
+				and create an instance of it. If you require access to other models besides this, the <code>loadModel()</code> function can fetch these for you.
+			</p>
 			<p><a class="button" href="https://github.com/AaronMoorhouse/cinderphp" target="_blank">View on GitHub</a></p>
 			<h3 class="project-title">Athena | Final Year Project<br><span style="font-size: 0.6em;">PHP, MySQL, JavaScript, HTML, CSS</span></h3>
 			<a href="https://selene.hud.ac.uk/u1354494/athena" target="_blank"><img src="img/athena.jpg"></img></a>

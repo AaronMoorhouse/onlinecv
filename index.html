@@ -593,6 +593,19 @@
 				within the 'models' folder). This means that the model can always be accessed by using <code>$this->model</code> without having to manually include 
 				and create an instance of it. If you require access to other models besides this, the <code>loadModel()</code> function can fetch these for you.
 			</p>
+			<h4>Data Access</h4>
+			<p>
+				In order to access data stored within a MySQL database, each controller can have an assigned model object as specified above. These model classes can 
+				contain functions which specify how to retrieve/send data to/from the database and how to process the result before it is returned to the controller. 
+				Generally, the controller would then pass the resulting data to either some other component function or to the template so that it can be displayed to the user 
+				via the view.
+			</p>
+			<p>
+				The framework includes a <code>Database</code> class, which all model object types have access to. This class contains various generic functions needed for 
+				database CRUD (create, read, update, delete) operations. For more complex or obscure queries, there is a <code>runQuery()</code> function to allow you to manually 
+				modify the query being run, which is useful if you need something more than a basic CRUD operation. This class uses PHP's built-in PDO interface to connect to and 
+				query the database.
+			</p>
 			<p><a class="button" href="https://github.com/AaronMoorhouse/cinderphp" target="_blank">View CinderPHP on GitHub</a></p>
 			<h3 class="project-title">Athena | Final Year Project<br><span style="font-size: 0.6em;">PHP, MySQL, JavaScript, HTML, CSS</span></h3>
 			<a href="https://selene.hud.ac.uk/u1354494/athena" target="_blank"><img src="img/athena.jpg"></img></a>

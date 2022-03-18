@@ -1,8 +1,8 @@
-var ageText = document.getElementById("age-text");
+var ageText = $("#age-text");
 var birthday = new Date("07/22/1995");
 var age = calculateAge(birthday);
 
-ageText.innerHTML = age + " Years";
+ageText.html(age + " Years");
 
 function calculateAge(birthday) {
     var ageDiff = Date.now() - birthday.getTime();

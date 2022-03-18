@@ -608,6 +608,21 @@
 				modify the query being run, which is useful if you need something more than a basic CRUD operation. This class uses PHP's built-in PDO interface to connect to and 
 				query the database.
 			</p>
+			<h4>Templating and Views</h4>
+			<p>
+				The template object is in charge of searching for and rendering the correct template based on which controller action has been invoked and also storing all 
+				of the variables passed from the controller, which will be used within the view to display to the user.
+			</p>
+			<p>
+				The template's <code>render()</code> function will search for the required view file along with either the site's default header and footer or specific 
+				ones for the given page if they exist and 'include' them. It will also extract the elements stored in the associative array of variables to be used within 
+				view so that they can be accessed like regular variables in the view file. This function is invoked upon destruction of the controller object, ensuring it 
+				is the last action that occurs before the page is displayed.
+			</p>
+			<p>
+				The views themselves are simply PHP files containing the HTML code for the front-end elements of the site with PHP code embedded where necessary for displaying 
+				any dynamic content.
+			</p>
 			<p><a class="button" href="https://github.com/AaronMoorhouse/cinderphp" target="_blank">View CinderPHP on GitHub</a></p>
 			<h3 class="project-title">Athena | Final Year Project<br><span style="font-size: 0.6em;">PHP, MySQL, JavaScript, HTML, CSS</span></h3>
 			<a href="https://selene.hud.ac.uk/u1354494/athena" target="_blank"><img src="img/athena.jpg"></img></a>

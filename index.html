@@ -592,6 +592,8 @@
 				It will also automatically create and store an instance of a model object, which is named using the same prefix as the controller (if such a class exists 
 				within the 'models' folder). This means that the model can always be accessed by using <code>$this->model</code> without having to manually include 
 				and create an instance of it. If you require access to other models besides this, the <code>loadModel()</code> function can fetch these for you.
+				Models for controllers are also optional, so if you do not want your controller to have an associated model (e.g. a controller for displaying static pages), 
+				this can be avoided by simply overriding the super constructor of the parent controller class.
 			</p>
 			<h4>Data Access</h4>
 			<p>

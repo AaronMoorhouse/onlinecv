@@ -1,40 +1,20 @@
-var toggle = document.getElementsByClassName("c-hamburger")[0];
-var freeze = document.getElementById("freeze");
+var toggle = $('.c-hamburger');
+var freeze = $('#freeze');
 
-function showMenu() {
-    freeze.style.visibility = "visible";
-}
+$(document).ready(function() {
+
+    toggle.click(function() {
+        if(!toggle.hasClass('is-active')) {
+            toggle.addClass('is-active');
+            freeze.css('visibility', 'visible');
+        }
+        else {
+            hideMenu();
+        }
+    });
+});
 
 function hideMenu() {
-    freeze.style.visibility = "hidden";
-    toggle.classList.remove("is-active");
+    toggle.removeClass('is-active');
+    freeze.css('visibility', 'hidden');
 }
-
-(function() {
-    "use strict";
-    var visible = false;
-
-    toggleHandler(toggle);
-
-    function toggleHandler(toggle) {
-        toggle.addEventListener("click", function(e) {
-            e.preventDefault();
-            
-            if(this.classList.contains("is-active")) {
-                this.classList.remove("is-active");
-            }
-            else {
-                this.classList.add("is-active");
-            }
-            
-            if(!visible) {
-                visible = true;
-                showMenu();
-            }
-            else {
-                visible = false;
-                hideMenu();
-            }
-        });
-    }
-})();

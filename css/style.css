@@ -208,6 +208,10 @@ a {
 	border-bottom: 1px solid #727878;
 }
 
+.dates {
+	font-size: 0.75em;
+}
+
 .section-end {
 	margin-bottom: 40px;
 }

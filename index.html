@@ -697,6 +697,44 @@
 				presets. This also affects the Gantt chart as tasks assigned to a specific user will appear in their chosen colour.
 			</p>
 			<p><a class="button" href="https://github.com/AaronMoorhouse/Athena" target="_blank">View Athena on GitHub</a></p>
+			<h3 class="project-title">Red/Blue Game | Teamwork & Communication Activity<br><span class="project-tech">Node.js, Express, EJS, jQuery</span></h3>
+			<p>
+				I originally came up with the idea for this project whilst studying on the LAB Project. This was one of the team-building exercises we were tasked 
+				with on one of the courses. Whilst the game is a fairly good concept, there seemed to be some challenges with facilitating the activity, so I thought 
+				a good idea would be to model the game in a digital format, which would avoid tutors and learners having to figure out the round results and add up all 
+				the scores.
+			</p>
+			<p>
+				I also thought it would be a interesting opportunuty to improve my JavaScript skills and learn more about building client-server applications using 
+				technologies I'm less familiar with and that differ significantly from languages I've done similar things with in the past like Java and C++.
+			</p>
+			<h4>Concept</h4>
+			<p>
+				The idea behind the red/blue game is to have two teams of people located in separate rooms so that they can't hear or see the other team communicating. 
+				The objective of the game is to select a colour each round (either red or blue) and the teams will score points depending on the combination of colours 
+				the teams have picked.
+			</p>
+			<p>
+				For example, if both teams pick red, both teams score three points. If both teams pick blue, both teams lose three points. If Team 1 pick red and Team 2 
+				pick blue, Team 1 gains six points and Team 2 lose six points and vice versa.
+			</p>
+			<p>
+				The end goal is for both teams to reach the end of ten rounds and still have a positive score at the end. The teams have two opportunies to send a single 
+				team member to briefly converse with another member of the other team, this can be rejected however.
+			</p>
+			<h4>Technologies</h4>
+			<p>
+				The game is written entirely in JavaScript, including both the front and back-end elements. The back-end code runs on a Node.js server using the Express 
+				framework. It also uses the EJS templating engine to allow the embedding of server-side JavaScript code within the HTML templates and to allow the inclusion 
+				of partial templates to minimise repetition of HTML markup.
+			</p>
+			<p>
+				The client-server aspects of the game are achieved using the middleware known as <a href="https://socket.io/" target="_blank">socket.io</a>, which allows for 
+				bi-directional communication between a server and multiple clients in real-time. When a team selects a colour, the client browser will emit a message to the 
+				server with the colour choice and the server will then wait until both teams have selected a colour. Once this has occurred, the server emits a message to 
+				all clients connected to that room (teams and observers), informing them of the round results. The server will also temporarily store the current scores 
+				and colour choices for each game in progress until either the game ends or both teams leave the game.
+			</p>
 		</section>
 	</div>
 	<section id="contact" class="wide">

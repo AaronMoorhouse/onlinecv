@@ -248,6 +248,10 @@ a {
 	margin-bottom: 20px;
 }
 
+.project-tech {
+	font-size: 0.6em;
+}
+
 #overlay-text, .profile-bottom img {
 	position: relative;
 	top: 50%;

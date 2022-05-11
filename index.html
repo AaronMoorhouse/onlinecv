@@ -663,18 +663,38 @@
 			<h3 class="project-title">Athena | Final Year Project<br><span class="project-tech">PHP, MySQL, JavaScript, HTML, CSS</span></h3>
 			<a href="https://selene.hud.ac.uk/u1354494/athena" target="_blank"><img src="img/athena.jpg"></img></a>
 			<p>
-				My final year project involved developing a PHP application to facilitate task management and communication within teams. Users can create/join/manage 
-				teams, create/manage tasks and communicate via discussion threads.
-			</p>
-			<h4>Customisation</h4>
-			<p>
-				An additional feature allows users to customise the website's colour scheme. The colour can be set to any RGB colour or one can be selected from a list of 
-				presets. This also affects the Gantt chart as tasks assigned to a specific user will appear in their chosen colour.
+				My final year project involved developing a PHP web application to facilitate task management and communication within teams. Users can create/join/manage 
+				teams, create/manage tasks within their team and communicate via discussion threads.
 			</p>
 			<h4>Technologies</h4>
 			<p>
 				The back-end was developed in PHP using the CinderPHP framework described above and all HTML and CSS for the responsive front-end was written from scratch 
 				without frameworks.
+			</p>
+			<p>
+				In terms of additional libraries, Athena uses the <a href="https://github.com/PHPMailer/PHPMailer" target="_blank">PHPMailer</a> library to send email 
+				alerts to users when they are invited to join a team. The Gantt chart feature on the tasks overview screen is drawn using a JavaScript library called 
+				<a href="https://github.com/jsGanttImproved/jsgantt-improved" target="_blank">JSGantt</a>.
+			</p>
+			<p>
+				For storing data such as user details, team data, tasks, discussion posts etc, the application uses a MySQL relational database, also designed and built 
+				by myself. 
+			</p>
+			<h4>Security</h4>
+			<p>
+				Since Athena deals with creating and storing user accounts, the database must store each user's password in one of its tables. This means that the 
+				passwords must be properly encrypted to avoid any security issues.
+			</p>
+			<p>
+				The encryption method I chose to employ was bcrypt. One of the main reasons I chose bcrypt was because it has been a reputable hashing function for 
+				many years and has yet to be compromised. What makes it so effective is that it not only utilises a salt during hashing to protect against rainbow table 
+				attacks, it also allows you to manually adjust the cost, which will slow down the algorithm based on the given value. This helps protect against brute-force 
+				attacks.
+			</p>
+			<h4>Customisation</h4>
+			<p>
+				An additional feature allows users to customise the website's colour scheme. The colour can be set to any RGB colour or one can be selected from a list of 
+				presets. This also affects the Gantt chart as tasks assigned to a specific user will appear in their chosen colour.
 			</p>
 			<p><a class="button" href="https://github.com/AaronMoorhouse/Athena" target="_blank">View Athena on GitHub</a></p>
 		</section>

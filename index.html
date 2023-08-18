@@ -660,7 +660,7 @@
 				The framework includes a <code>Database</code> class, which all model object types have access to. This class contains various generic functions needed for 
 				database CRUD (create, read, update, delete) operations. For more complex or obscure queries, there is a <code>runQuery()</code> function to allow you to manually 
 				modify the query being run, which is useful if you need something more than a basic CRUD operation. This class uses PHP's built-in PDO interface to connect to and 
-				query the database.
+				query the database using prepared statements for enhanced security.
 			</p>
 			<h4>Templating and Views</h4>
 			<p>

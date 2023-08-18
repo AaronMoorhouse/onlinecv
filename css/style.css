@@ -39,6 +39,10 @@ a {
 	color: #18a2d0;
 }
 
+code {
+	background-color: #d7d7d7;
+}
+
 /* -----Menu----- */
 
 .c-hamburger {
